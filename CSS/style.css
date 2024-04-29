@@ -1,0 +1,55 @@
+#wrapper{
+    display:grid;
+    grid-template-columns: 300px 1fr;
+        
+}
+
+body{
+    background-color: beige;
+}
+div{
+    border:1px solid black;
+    background-color: beige;
+    color: solid black;
+
+}
+#header{
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center
+}
+
+#main{
+    grid-area: main;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#nav{
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+    
+#sidebar{
+    grid-area: sidebar;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: left;
+}
+    
+#footer{
+        grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    }
